@@ -1,0 +1,41 @@
+{
+	"name": "cantor-frontend",
+	"version": "0.0.1",
+	"description": "A CanJS Exploration",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/musl/cantor.git"
+	},
+	"author": "Mike Hix <m@hix.io>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/musl/cantor/issues"
+	},
+	"homepage": "https://github.com/musl/cantor#readme",
+	"dependencies": {
+		"can-component": "^3.3.9",
+		"can-compute": "^3.3.10",
+		"can-connect": "^1.5.16",
+		"can-define": "^1.5.4",
+		"can-route": "^3.3.2",
+		"can-route-pushstate": "^3.2.3",
+		"can-set": "^1.5.0",
+		"can-stache": "^3.14.8",
+		"can-stache-bindings": "^3.11.9"
+	},
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-minify-webpack-plugin": "^0.2.0",
+		"babel-preset-env": "^1.6.1",
+		"copy-webpack-plugin": "^4.3.1",
+		"css-loader": "^0.28.8",
+		"raw-loader": "^0.5.1",
+		"style-loader": "^0.19.1",
+		"webpack": "^3.10.0"
+	}
+}

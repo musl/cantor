@@ -1,7 +1,8 @@
-/backend/backend
-/backend/backend.test
-/frontend/node_modules
-/frontend/coverage
+cantor
+cantor.test
+/node_modules
+/coverage
+/build
 .DS_Store
 *.log
 *.db
