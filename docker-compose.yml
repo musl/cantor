@@ -1,0 +1,9 @@
+version: "3.3"
+
+services:
+  cantor:
+    build: .
+    image: musl/cantor:v1
+    container_name: cantor
+    ports:
+      - 9000:9000

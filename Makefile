@@ -26,3 +26,6 @@ test: $(BIN)
 run: $(BIN)
 	./$(BIN)
 
+docker: clean $(BIN) frontend
+	GOOS=linux GOARCH=amd64 go build -o ./$(BIN) ./src
+	docker-compose up --build -d
