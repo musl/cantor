@@ -2,7 +2,7 @@ BIN := $(shell basename $(CURDIR))
 
 .PHONY: all clean clobber frontend test
 
-all: clean $(BIN) frontend test run
+all: clean test $(BIN) frontend run
 
 clean:
 	rm -f $(BIN)
@@ -18,10 +18,10 @@ frontend: node_modules
 	webpack
 
 $(BIN): 
-	go build .
+	go build -o ./$(BIN) ./src
 
 test: $(BIN)
-	go test -v .
+	go test ./src 
 
 run: $(BIN)
 	./$(BIN)
